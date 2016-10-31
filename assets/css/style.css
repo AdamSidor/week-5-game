@@ -1,0 +1,40 @@
+body {
+	background-image: url("images/court.jpg");
+	text-align: center;
+
+}	
+
+.header{
+	background-color: #DC143C;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	color:white;
+	font-size: 50px; 
+	width: 500px;
+	display: table;
+	margin-right:auto;
+	margin-left:auto;
+
+}
+
+.timer{background-color: #00008B;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	color:white;
+	font-size:20px;
+	width: 500px;
+	height:25px;
+	display: table;
+	margin-right:auto;
+	margin-left:auto;
+
+
+}
+
+.questions{
+	background-color: #DC143C;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	color:white;
+	width: 500px;
+	display: table;
+	margin-right:auto;
+	margin-left:auto;
+}
