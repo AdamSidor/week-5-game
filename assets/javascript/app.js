@@ -2,7 +2,7 @@
 var questionNum = 5;
 
 // Number of questions displayed in answer area
-var answers = [];
+var answers = []
 
 // declaring questions
 
@@ -13,7 +13,7 @@ var question4
 var question5
 
 //placeholder for button values
-var userInput = [];
+var userInput = []
 
 // Answers
 answers[0] = "Wilt";
@@ -22,16 +22,39 @@ answers[2] = "Adam";
 answers[3] = "Ben";
 answers[4] = "Kareem";
 
-// function to get score ...
+// function to get values from buttons
+
+
+function getRadioValue() {
+    var radios = form1.elements[userInput];
+    window.rdValue; 
+        for (var i=0; i<questionNum.length; i++) {
+             var radioVal = radios[i];
+              if (radioVal.checked) {
+                rdValue = radioVal.value;
+                    break;
+                }
+            else rdValue = 'noRadioChecked';
+            }
+              if (rdValue == '5') {
+              alert('5'); 
+            }
+            else if (rdValue == 'noRadioChecked') {
+              alert('no radio checked');
+            }
+        }
+
+var radios = getRadioValue();
+// function to get score 
 function getScore() {
   var score = 0;
   var questionNum = 5;
   var form = document.getElementById('form1');
-    userInput[0] = form1.question1.value;
-    userInput[1] = form1.question2.value;
-    userInput[2] = form1.question3.value;
-    userInput[3] = form1.question4.value;
-    userInput[4] = form1.question5.value;
+    userInput[0] = form1.question1.radios;
+    userInput[1] = form1.question2.radios;
+    userInput[2] = form1.question3.radios;
+    userInput[3] = form1.question4.radios;
+    userInput[4] = form1.question5.radios;
 
 
 
