@@ -8,76 +8,99 @@
 </head>
 
 <body>
+
+	<div class="SplashScreen">
+	<h1>NBA Game</h1>
+	<input id="startButton" type="button" value="Start"/>
+	</div>
+
+	<canvas id="GameCanvas" style="display: none;">click here to start</canvas>
+
+
+
 	
 	<div class="header">  NBA TRIVIA GAME </div>
 
-	<div class="timer"> Time remaining: </div>
+	<div id="show-number"> Time remaining: </div>
 
 
 
+	<div class= qtext>
+	<p> Q1. Who holds the single-game record for most points scored? </p> 
+	
+	<form class = "form1">
 
 	<div class="questions">
+		<input type="radio" name="answer1" value="Patrick"> Patrick Ewing <br>
+		<input type="radio" name="answer1" value="Larry"> Larry Bird <br>
+		<input type="radio" name="answer1" value="Bill"> Bill Russell <br>
+		<input type="radio" name="answer1" value="Wilt"> Wilt Chamberlain <br>
+	</div>
 
-	<p> Q1. Who holds the single-game record for most points scored?  
-
-	<form id = "form1">
-		<input type="radio" name="question1" value="Patrick"> Patrick Ewing <br>
-		<input type="radio" name="question1" value="Larry"> Larry Bird <br>
-		<input type="radio" name="question1" value="Bill"> Bill Russell <br>
-		<input type="radio" name="question1" value="Wilt"> Wilt Chamberlain <br>
 	</form>
 
-	</p>
-
-	<p> Q2. Which team won the 2016 Championship?
 	
-	<form id = "form1">
+	<p> Q2. Which team won the 2016 Championship? </p>
+	
+	<form class = "form2">
+
+	<div class="questions">
 		<input type="radio" name="question2" value="CHI"> Chicago Bulls <br>
 		<input type="radio" name="question2" value="GSW"> Golden State Warriors <br>
 		<input type="radio" name="question2" value="CLE"> Cleveland Cavaliers <br>
 		<input type="radio" name="question2" value="MIA"> Miami Heat <br>
+	</div>
 
 	</form>
-	</p>	
 	
-	</p> Q3. Who is currently the NBA commissioner?
+	
+	<p> Q3. Who is currently the NBA commissioner? </p>
 
 
-	<form id = "form1">
+	<form class = "form3">
+	<div class="questions">
 		<input type="radio" name="question3" value="Adam"> Adam Silver <br>
 		<input type="radio" name="question3" value="Nate"> Nate Silver <br>
 		<input type="radio" name="question3" value="Larry"> Larry O'Brien <br>
-		<input type="radio" name="question3" value="David"> David Stern <br>
-	
+		<input type="radio" name="question3" value="Daivd"> David Stern <br>
+	</div>
+
 	</form>
-	</p>
+	
 
-	<p> Q4. Who was the first selection in the 2016 NBA draft?
+	<p> Q4. Who was the first selection in the 2016 NBA draft? </p>
 
-	<form id = "form1">
+	<form class = "form4">
+	<div class="questions">
 		<input type="radio" name="question4" value="Ben"> Ben Simmons <br>
 		<input type="radio" name="question4" value="Brandon"> Brandon Ingram <br>
 		<input type="radio" name="question4" value="Anthony"> Anthony Davis <br>
-		<input type="radio" name="question4" value="Karl"> Karl-Anthony Towns <br>
-
+		<input type="radio" name="question4" value="KAT"> Karl-Anthony Towns <br>
+	</div>
 	</form>
-	</p>
 
-	<p> Q5. Who has the scored the most career points?
 
-	<form id = "form1">
+	<p> Q5. Who has the scored the most career points? </p>
+
+	<form class = "form5">
+	<div class="questions">
 		<input type="radio" name="question5" value="Kobe"> Kobe Bryant <br>
-		<input type="radio" name="question5" value="Malone"> Karl Malone <br>
-		<input type="radio" name="question5" value="Michael"> Michael Jordan <br>
+		<input type="radio" name="question5" value="Karl"> Karl Malone <br>
+		<input type="radio" name="question5" value="MJ"> Michael Jordan <br>
 		<input type="radio" name="question5" value="Kareem"> Kareem Abdul-Jabbar <br>
-
+	</div>
 	</form>
-	<button onclick = "javascript: alert(getScore())"> Click for score </button>
-	</p>	
-	</p>
-	
 
 	</div>
+
+
+
+	<button id="scoreButton" onclick = "javascript: alert(getScore())"> Click for score </button>
+	</p>	
+	</p>
+	</div>
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="assets/javascript/app.js"></script>
