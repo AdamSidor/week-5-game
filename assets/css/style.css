@@ -75,3 +75,12 @@ body {
 }
 
 
+#answerDiv{
+	background-color: #DC143C;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	color:white;
+	width: 500px;
+	display: table;
+	margin-right:auto;
+	margin-left:auto;
+}
