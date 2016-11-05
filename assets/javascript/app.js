@@ -89,7 +89,6 @@ function getAnswers() {
 }
 
 
-getAnswers();
 
 
  function checkAnswer() {
