@@ -60,7 +60,7 @@ clearInterval(counter);
 
 
 
-var radioAll = [];
+var radioAll = [getAnswers()];
 
 //placeholder for button values
 function getAnswers() {
