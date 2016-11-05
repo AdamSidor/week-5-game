@@ -4,7 +4,7 @@ var questionNum = 5;
 
 // declaring questions
 
-var answers = [ 'Wilt', 'CLE' , 'Adam' , 'Ben' , 'Kareem'];
+var answers = [ "Wilt", "CLE" , "Adam" , "Ben" , "Kareem"];
  
 var correctAnswers = 0;
 
@@ -37,17 +37,28 @@ function decrement(){
 // ...run the stop function.
     stop();
 // Alert the user that time is up.
-    alert('Time Up!')
+   // alert('Time Up!')
+    
+
 
   }
 }
+
+
 
 // The stop function
 function stop(){
 // Clears our "counter" interval.
 // We just pass the name of the interval
 // to the clearInterval function.
-clearInterval(counter);
+  clearInterval(counter);
+  getAnswers();
+  checkAnswer();
+  $('#answerDiv').text("You got "  + correctAnswers + " questions correct");
+  console.log(radioAll);
+
+
+
 }
 
 
@@ -60,7 +71,7 @@ clearInterval(counter);
 
 
 
-var radioAll = [getAnswers()];
+var radioAll = [];
 
 //placeholder for button values
 function getAnswers() {
@@ -83,9 +94,9 @@ getAnswers();
 
  function checkAnswer() {
    for (var i=0; i<answers.length; i++) {
-     console.log(radioAll[i]);
-     console.log(answers[i]);
-     if (radioAll[i] == answers[i]){
+     // console.log(radioAll[i]);
+     // console.log(answers[i]);
+     if (radioAll[i] == answers[i]) {
        correctAnswers ++;
      }
    }
@@ -93,16 +104,16 @@ getAnswers();
 
  checkAnswer();
 
- $('#answerDiv').text( "You got "  + correctAnswers + " questions correct")
 
 
 
-$(document).ready(function(){
-  $("#StartButton").click (function() {
-      run();
-      $("#SplashScreen").hide();
-      $("#GameCanvas").show();
-    });
-  $("#scoreButton")
 
-});
+// $(document).ready(function(){
+//   $("#StartButton").click (function() {
+//       run();
+//       $("#SplashScreen").hide();
+//       $("#GameCanvas").show();
+//     });
+//   $("#scoreButton")
+
+// });
